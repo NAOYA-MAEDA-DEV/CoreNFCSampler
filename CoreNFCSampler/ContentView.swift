@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var reader = NFCTagReader()
-    @FocusState private var emailFieldIsFocused: Bool
+    @FocusState private var textFieldIsFocused: Bool
     
     var body: some View {
         VStack(spacing: 0) {
@@ -25,7 +25,7 @@ struct ContentView: View {
                         "Enter the message.",
                         text: $reader.writeMesage
                     )
-                    .focused($emailFieldIsFocused)
+                    .focused($textFieldIsFocused)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
                 .padding()
