@@ -9,14 +9,14 @@
 import Foundation
 
 enum SessionType: String, CaseIterable, Identifiable  {
-    case read
-    case write
-    case lock
-    var id: String { rawValue }
+  case read
+  case write
+  case lock
+  var id: String { rawValue }
 }
 
 enum NFCFormat: String, CaseIterable, Identifiable  {
-    case ndef
-    case suica
-    var id: String { rawValue }
+  case ndef
+  case suica
+  var id: String { rawValue }
 }
